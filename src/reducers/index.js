@@ -1,7 +1,10 @@
-import counter from "./counter";
-import isLogged from "./isLogged";
-import { combineReducers } from "redux";
+import {
+    combineReducers
+} from 'redux';
+import counterReducer from './counterReducer'
 
-const allReducers = combineReducers({ counter, isLogged });
+const allReducers = combineReducers({
+    counter: counterReducer
+})
 
 export default allReducers;
